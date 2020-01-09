@@ -6,5 +6,44 @@
   "jsnext:main": "dist/index.es.js",
   "repository": "git@github.com:renemonroy/create-react-popup.git",
   "author": "René Monroy",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "popup",
+    "overlay"
+  ],
+  "scripts": {
+    "format": "prettier-standard --format"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/addon-knobs": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "12.12.22",
+    "@types/react": "^16.9.17",
+    "@types/react-color": "^3.0.1",
+    "@types/react-dom": "^16.9.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "react-color": "^2.17.3",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.27.14",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "standard": "^14.3.1",
+    "standard-prettier": "^1.0.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  }
 }
