@@ -52,5 +52,19 @@
     "testPathIgnorePatterns": [
       "build/"
     ]
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "test",
+      "expect",
+      "afterAll",
+      "jest"
+    ]
   }
 }
