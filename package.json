@@ -45,5 +45,12 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "build/"
+    ]
   }
 }
