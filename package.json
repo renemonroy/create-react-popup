@@ -1,7 +1,9 @@
 {
   "name": "create-react-popup",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "repository": "git@github.com:renemonroy/create-react-popup.git",
   "author": "René Monroy",
   "license": "MIT"
