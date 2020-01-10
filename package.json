@@ -13,7 +13,11 @@
     "overlay"
   ],
   "scripts": {
-    "format": "prettier-standard --format"
+    "build": "rollup -c",
+    "lint": "standard",
+    "format": "prettier-standard --format",
+    "test": "jest --coverage",
+    "storybook": "start-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
