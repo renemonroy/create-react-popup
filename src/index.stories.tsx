@@ -91,7 +91,7 @@ function InputColor({ position, label = "color" }: any) {
  * --------------------------------------------------------------------------
  */
 
-export function InputWithColorPicker() {
+export function inputColor() {
   const pos = select("Position", positionOptions, "trigger-bottom-left");
   return <InputColor label="Color" position={pos} />;
 }
