@@ -1,6 +1,6 @@
 # 🔩 create-react-popup
 
-> An experimental usage of compound components to create popup components.
+> An experimental use of compound components to create popup components.
 
 ### Features
 
