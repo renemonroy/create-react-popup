@@ -1,0 +1,58 @@
+import { Story, Preview } from "@storybook/addon-docs/blocks";
+import InputColor from "./InputColor";
+
+<Meta title="Input Color" />
+
+# Popup Examples
+
+---
+
+## `InputColor`
+
+<Preview>
+  <Story id="popup-examples--input-color-example" />
+</Preview>
+
+This is just a simple example of how to create an `InputColor` component with `create-react-popup`:
+
+```jsx
+import React from "react";
+import { BlockPicker } from "react-color";
+
+const Popup = createReactPopup();
+
+export function InputColor({ position, label = "color" }: any) {
+  const defVal = "#000000";
+  const [value, setValue] = React.useState(defVal);
+  return (
+    <Popup position={position}>
+      {({ close }) => (
+        <div className="input-color">
+          <label>{label}: </label>
+          <Popup.Trigger>
+            <input type="text" placeholder={defVal} value={value} readOnly />
+          </Popup.Trigger>
+          <Popup.Content>
+            <div style={pickerContainerStyle}>
+              <BlockPicker
+                color={value}
+                onChangeComplete={color => {
+                  setValue(color.hex);
+                  close(); // not required when clicking outside
+                }}
+                triangle="hide"
+              />
+            </div>
+          </Popup.Content>
+        </div>
+      )}
+    </Popup>
+  );
+}
+```
+
+And this its usage:
+
+```jsx
+<InputColor label="Color" position="trigger-bottom-left" />
+```

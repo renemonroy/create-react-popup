@@ -19,6 +19,7 @@
     "noUnusedParameters": true,
     "esModuleInterop": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src", "src/examples"],
+  "exclude": ["node_modules", "dist"],
+  "files": ["./mdx.d.ts"]
 }

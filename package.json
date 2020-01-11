@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@mdx-js/loader": "^1.5.3",
+    "@storybook/addon-docs": "^5.2.8",
     "@storybook/addon-knobs": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "@testing-library/jest-dom": "^4.2.4",
@@ -35,6 +37,7 @@
     "jest": "^24.9.0",
     "react": "^16.12.0",
     "react-color": "^2.17.3",
+    "react-docgen-typescript-loader": "^3.6.0",
     "react-dom": "^16.12.0",
     "rollup": "^1.27.14",
     "rollup-plugin-commonjs": "^10.1.0",
