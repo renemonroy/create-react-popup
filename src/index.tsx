@@ -68,25 +68,25 @@ export default function createReactPopup() {
 
     function updateCoords(clientRect: ClientRect) {
       const clRect: ClientRect = clientRect;
-      let left = 0;
-      let top = 0;
+      let left = 0 + window.scrollX;
+      let top = 0 + window.scrollY;
       switch (ctx.position) {
         case "trigger-top-left":
-          left = clRect.left;
-          top = clRect.top - ref.current.clientHeight;
+          left += clRect.left;
+          top += clRect.top - ref.current.clientHeight;
           break;
         case "trigger-top-right":
-          left = clRect.right - ref.current.clientWidth;
-          top = clRect.top - ref.current.clientHeight;
+          left += clRect.right - ref.current.clientWidth;
+          top += clRect.top - ref.current.clientHeight;
           break;
         case "trigger-bottom-right":
-          left = clRect.right - ref.current.clientWidth;
-          top = clRect.top + clRect.height;
+          left += clRect.right - ref.current.clientWidth;
+          top += clRect.top + clRect.height;
           break;
         case "trigger-bottom-left":
         default:
-          left = clRect.left;
-          top = clRect.top + clRect.height;
+          left += clRect.left;
+          top += clRect.top + clRect.height;
       }
       setCoords({ left, top });
     }
