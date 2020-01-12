@@ -67,14 +67,14 @@ export default function InputColor({ color: defaultColor }) {
 }
 ```
 
-### `Popup`
+#### `Popup`
 
 Main wrapper of the behavior. The `position` means where to show the Content
 
-### `Popup.Content`
+#### `Popup.Content`
 
 The element that will appear in a React portal
 
-### `Popup.Trigger` Anything that
+#### `Popup.Trigger` Anything that
 
 The element that executes the opening of whatever the Content has
