@@ -33,7 +33,7 @@ export default function HelloPopup() {
   return (
     <Popup position="trigger-bottom-left">
       {({ close }) => (
-        <React.Fragment>
+        <>
           {/* You can replace Fragment with whatever makes sense or add additional elements */}
           <Popup.Trigger>
             <button>Say Hello</button>
@@ -41,7 +41,7 @@ export default function HelloPopup() {
           <Popup.Content>
             <p>Hello there!</p>
           </Popup.Content>
-        </React.Fragment>
+        </>
       )}
     </Popup>
   );
