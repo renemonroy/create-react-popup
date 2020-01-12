@@ -4,7 +4,7 @@
 
 ### Features
 
-- Eases the creation of Popup components through a compound pattern
+- Eases the creation of Popup components through the Compound Component pattern
 - Uses React Portals to render the available Popups
 - Creates a context on each Popup build to support multiple usage
 - Has different positioning options
