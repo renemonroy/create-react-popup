@@ -56,6 +56,6 @@ Main wrapper of the behavior. The `position` means where to show the Content
 
 The element that will appear in a React portal
 
-#### `Popup.Trigger` Anything that
+#### `Popup.Trigger`
 
 The element that executes the opening of whatever the Content has
