@@ -53,7 +53,12 @@ Then the Popup created could be used in your project as:
 
 ```jsx
 function Example() {
-  return <HelloPopup />;
+  return (
+    <div className="example">
+      <p>The button below opens a simple popup saying "Hello there!"
+      <HelloPopup />
+    </div>
+  );
 }
 ```
 
