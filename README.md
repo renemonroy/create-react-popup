@@ -41,7 +41,7 @@ export default function InputColor({ color: defaultColor }) {
     <ColorPopup position="trigger-bottom-left">
       {({ close }) => (
         <React.Fragment>
-          {/* You can replace Fragment with whatever makes more sense */}
+          {/* You can replace Fragment with whatever makes sense or add additional elements */}
           <ColorPopup.Trigger>
             <input
               type="text"
