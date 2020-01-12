@@ -13,11 +13,12 @@
 
 This component might help you if your use case meets the following requirements:
 
-- A Popup is anything that is rendered in an overlayed element (modal, tooltip, picker, etc)
 - Each Popup always depends of a Content to show and a Trigger that shows that content
-- Both, the Trigger and the Content, are elements that can be anything
-- Each Popup Content automatically closes itself whenever the use clicks outside of it
+- Everything inside `Popup` will be rendered except `Popup.Content`, which will be in a Portal
+- Then `Popup.Content` is anything that is rendered in an overlayed element (modal, tooltip, picker, etc)
+- Both, the Trigger and the Content, are DOM elements of any kind
 - The Popup component needs flexibility for complex structure and styles
+- Each `Content` automatically closes itself whenever the use clicks outside of it
 
 ### Example
 
@@ -45,6 +46,14 @@ export default function HelloPopup() {
       )}
     </Popup>
   );
+}
+```
+
+Then the Popup created could be used in your project as:
+
+```jsx
+function Example() {
+  return <HelloPopup />;
 }
 ```
 
