@@ -21,48 +21,29 @@ This component might help you if your use case meets the following requirements:
 
 ### Example
 
-This is a simple example of how a popup component can be created:
+The next code shows the the flexibility to create multiple types of popups easily.
 
 ```jsx
 import React from "react";
-import { BlockPicker } from "react-color"; // Let's use this NPM package as content
 import createReactPopup from "create-react-popup";
 
-const ColorPopup = createReactPopup(); // This creates a context for this Popup
+const Popup = createReactPopup(); // This creates a context for this Popup
 
-export default function InputColor({ color: defaultColor }) {
-  const [color, setValue] = React.useColor(defaultColor);
-
-  React.useEffect(() => {
-    setValue(defaultColor);
-  }, [defaultColor]); // Restart the color whenever the prop changes
-
+export default function HelloPopup() {
   return (
-    <ColorPopup position="trigger-bottom-left">
+    <Popup position="trigger-bottom-left">
       {({ close }) => (
         <React.Fragment>
           {/* You can replace Fragment with whatever makes sense or add additional elements */}
-          <ColorPopup.Trigger>
-            <input
-              type="text"
-              placeholder={defaultColor}
-              value={color}
-              readonly
-            />
-          </ColorPopup.Trigger>
-          <ColorPopup.Content>
-            <BlockPicker
-              color={value}
-              onChangeComplete={color => {
-                setValue(color.hex);
-                close(); // not required when clicking outside
-              }}
-              triangle="hide"
-            />
-          </ColorPopup.Content>
+          <Popup.Trigger>
+            <button>Say Hello</button>
+          </Popup.Trigger>
+          <Popup.Content>
+            <p>Hello there!</p>
+          </Popup.Content>
         </React.Fragment>
       )}
-    </ColorPopup>
+    </Popup>
   );
 }
 ```
