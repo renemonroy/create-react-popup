@@ -21,7 +21,7 @@ This component might help you if your use case meets the following requirements:
 
 ### Example
 
-This is a simple example of how it works:
+This is a simple example of how a popup component can be created:
 
 ```jsx
 import React from "react";
