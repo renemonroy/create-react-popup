@@ -28,7 +28,7 @@ The next code shows the the flexibility to create multiple types of popups easil
 import React from "react";
 import createReactPopup from "create-react-popup";
 
-const Popup = createReactPopup(); // This creates a context for this Popup
+const Popup = createReactPopup(); // This creates a new Popup with its own context
 
 export default function HelloPopup() {
   return (
