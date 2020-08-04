@@ -17,8 +17,8 @@ This component might help you if your use case meets the following requirements:
 - Everything inside `Popup` will be rendered except `Popup.Content`, which will be in a Portal
 - Then `Popup.Content` is anything that is rendered in an overlayed element (modal, tooltip, picker, etc)
 - Both, the Trigger and the Content, are DOM elements of any kind
-- The Popup component needs flexibility for complex structure and styles
-- Each `Content` automatically closes itself whenever the use clicks outside of it
+- The Popup component is flexible for complex structure and styles
+- Each `Content` automatically closes itself whenever the user clicks outside of it
 
 ### Example
 
