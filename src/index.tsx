@@ -9,7 +9,6 @@ import {
   IPopupProps,
   IPopupTriggerProps
 } from "./index.interfaces";
-
 import { createRootElement } from "./index.utils";
 
 export default function createReactPopup() {
