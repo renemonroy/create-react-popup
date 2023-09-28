@@ -1,7 +1,5 @@
 # 🔩 create-react-popup
 
-> Use compound components pattern to ease creation of popup components.
-
 ### Features
 
 - Eases the creation of Popup components through the Compound Component pattern
